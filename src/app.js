@@ -1,11 +1,22 @@
 import "bootstrap";
 import "./style.css";
 
+import "./assets/img/dotJS-logo.jpg";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+const domainNamePart1Options = ["my", "fast", "crazy"];
+const domainNamePart2Options = ["travel", "food", "ticket"];
+const domainNamePart3Options = ["deals", "bus", "trio"];
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+function displayDomainName(domainNamePart1, domainNamePart2, domainNamePart3) {
+  
+}
+
+window.onload = function () {
+  for (i = 0; i < 5; i++) {
+    for (j = 0; j < 5; j++) {
+      for (k = 0; k < 5; k++) {
+
+      }
+    }
+  }
 };
