@@ -1,5 +1,17 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: azure;
+}
+
+h1 {
+    color: white;
+}
+
+strong {
+    color: navy;
+}
+
+li {
+    margin: 1rem;
 }
