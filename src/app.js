@@ -13,7 +13,7 @@ window.onload = function () {
     domainNamePart2,
     domainNamePart3,
   ) {
-    const domainNameList = dosument.querySelector("#domainNameList");
+    const domainNameList = document.querySelector("#domainNameList");
     const newListItem = document.createElement("li");
     newListItem.textContent =
       domainNamePart1[i] + domainNamePart2[j] + domainNamePart3[k];
