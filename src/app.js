@@ -1,38 +1,79 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/dotJS-logo.jpg";
+// window.onload = function () {
+//   const domainParts1 = ["Magic", "Fast", "Crazy, Random"];
+//   const domainParts2 = ["Super", "Food", "School, Numbers"];
+//   const domainParts3 = ["Man", "b.us", "Mar.io, Game"];
+//   const domainExtensions = [".com", ".net", ".org", ".us", ".io"];
+
+//   let thereAreDuplicatesToSkip = false;
+
+//   function createElement(
+//     domainParts1Index,
+//     domainParts2Index,
+//     domainParts3Index,
+//     domainExtensionsIndex,
+//   ) {
+//     const domainList = document.querySelector("#domainList");
+//     const liElement = document.createElement("li");
+//     if (
+//       domainParts3[domainParts3Index] === "b.us" ||
+//       domainParts3[domainParts3Index] === "Mar.io"
+//     ) {
+//       liElement.textContent =
+//         domainParts1[domainParts1Index] +
+//         domainParts2[domainParts2Index] +
+//         domainParts3[domainParts3Index];
+//       thereAreDuplicatesToSkip = true;
+//     } else {
+//       liElement.textContent =
+//         domainParts1[domainParts1Index] +
+//         domainParts2[domainParts2Index] +
+//         domainParts3[domainParts3Index] +
+//         domainExtensions[domainExtensionsIndex];
+//     }
+//     domainList.appendChild(liElement);
+//   }
+
+//   for (let i = 0; i < domainParts1.length; i++) {
+//     for (let j = 0; j < domainParts2.length; j++) {
+//       for (let k = 0; k < domainParts3.length; k++) {
+//         for (let x = 0; x < domainExtensions.length; x++) {
+//           createElement(i, j, k, x);
+//           if (thereAreDuplicatesToSkip) {
+//             x = domainParts3.length;
+//             thereAreDuplicatesToSkip = false;
+//           }
+//         }
+//       }
+//     }
+//   }
+// };
 
 window.onload = function () {
-  const domainPt1 = ["Magic", "Fast", "Crazy, Random"];
-  const domainPt2 = ["Super", "Food", "School, Numbers"];
-  const domainPt3 = ["Man", "b.us", "Mar.io, Game"];
-  const domainExtensions = ["com", "net", "org"];
+  const domainParts1 = ["Magic", "Fast", "Crazy, Random"];
+  const domainParts2 = ["Super", "Food", "School, Numbers"];
+  const domainParts3 = ["Man", "Bus", "Mario", "Game"];
+  const domainExtensions = [".com", ".net", ".org", ".us", ".io"];
 
-  let thereAreDuplicatesToSkip = false;
-
-  function createElement(i, j, k, x) {
+  function createElement(
+    domainParts1Index,
+    domainParts2Index,
+    domainParts3Index,
+    domainExtensionsIndex,
+  ) {
     const domainList = document.querySelector("#domainList");
     const liElement = document.createElement("li");
-    if (domainPt3[k] === "b.us" || domainPt3[k] === "Mar.io") {
-      liElement.textContent = domainPt1[i] + domainPt2[j] + domainPt3[k];
-      thereAreDuplicatesToSkip = true;
-    } else {
-      liElement.textContent =
-        domainPt1[i] + domainPt2[j] + domainPt3[k] + "." + domainExtensions[x];
-    }
+    liElement.textContent = domainParts1[domainParts1Index] + domainParts2[domainParts2Index] + domainParts3[domainParts3Index] + domainExtensions[domainExtensionsIndex];
     domainList.appendChild(liElement);
   }
 
-  for (let i = 0; i < domainPt1.length; i++) {
-    for (let j = 0; j < domainPt2.length; j++) {
-      for (let k = 0; k < domainPt3.length; k++) {
-        for (let x = 0; x < domainPt3.length; x++) {
+  for (let i = 0; i < domainParts1.length; i++) {
+    for (let j = 0; j < domainParts2.length; j++) {
+      for (let k = 0; k < domainParts3.length; k++) {
+        for (let x = 0; x < domainExtensions.length; x++) {
           createElement(i, j, k, x);
-          if (thereAreDuplicatesToSkip) {
-            x = domainPt3.length;
-            thereAreDuplicatesToSkip = false;
-          }
         }
       }
     }
