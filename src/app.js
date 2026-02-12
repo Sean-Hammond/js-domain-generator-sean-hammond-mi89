@@ -4,9 +4,9 @@ import "./style.css";
 import "./assets/img/dotJS-logo.jpg";
 
 window.onload = function () {
-  const domainPt1 = ["Magic", "Fast", "Crazy"];
-  const domainPt2 = ["Super", "Food", "School"];
-  const domainPt3 = ["Man", "b.us", "Mar.io"];
+  const domainPt1 = ["Magic", "Fast", "Crazy, Random"];
+  const domainPt2 = ["Super", "Food", "School, Numbers"];
+  const domainPt3 = ["Man", "b.us", "Mar.io, Game"];
   const domainExtensions = ["com", "net", "org"];
 
   let thereAreDuplicatesToSkip = false;
